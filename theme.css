@@ -1,0 +1,164 @@
+div.jsoneditor,
+div.jsoneditor-menu {
+  border-color: #4b4b4b;
+  border: 0;
+}
+
+div.jsoneditor-menu {
+  background-color: #4b4b4b;
+}
+
+div.jsoneditor-tree,
+div.jsoneditor textarea.jsoneditor-text {
+  background-color: #666666;
+  color: #ffffff;
+}
+
+div.jsoneditor-field,
+div.jsoneditor-value {
+  color: #ffffff;
+}
+
+table.jsoneditor-search div.jsoneditor-frame {
+  background: #808080;
+}
+
+tr.jsoneditor-highlight,
+tr.jsoneditor-selected {
+  background-color: #808080;
+}
+
+div.jsoneditor-field[contenteditable=true]:focus,
+div.jsoneditor-field[contenteditable=true]:hover,
+div.jsoneditor-value[contenteditable=true]:focus,
+div.jsoneditor-value[contenteditable=true]:hover,
+div.jsoneditor-field.jsoneditor-highlight,
+div.jsoneditor-value.jsoneditor-highlight {
+  background-color: #808080;
+  border-color: #808080;
+}
+
+div.jsoneditor-field.highlight-active,
+div.jsoneditor-field.highlight-active:focus,
+div.jsoneditor-field.highlight-active:hover,
+div.jsoneditor-value.highlight-active,
+div.jsoneditor-value.highlight-active:focus,
+div.jsoneditor-value.highlight-active:hover {
+  background-color: #b1b1b1;
+  border-color: #b1b1b1;
+}
+
+div.jsoneditor-tree button:focus {
+  background-color: #868686;
+}
+
+div.jsoneditor-readonly {
+  color: #acacac;
+}
+
+div.jsoneditor td.jsoneditor-separator {
+  color: #acacac;
+}
+
+div.jsoneditor-value.jsoneditor-string {
+  color: #00ff88;
+}
+
+div.jsoneditor-value.jsoneditor-object,
+div.jsoneditor-value.jsoneditor-array {
+  color: #bababa;
+}
+
+div.jsoneditor-value.jsoneditor-number {
+  color: #ff4040;
+}
+
+div.jsoneditor-value.jsoneditor-boolean {
+  color: #ff8048;
+}
+
+div.jsoneditor-value.jsoneditor-null {
+  color: #49a7fc;
+}
+
+div.jsoneditor-value.jsoneditor-invalid {
+  color: white;
+}
+
+#statusbar {
+  width: 100%;
+  background-color: rgb(102, 102, 102);
+  border-bottom: 1px solid white;
+}
+
+#container {
+  height: 100%;
+}
+
+#jsonInput {
+  float: left;
+  width: 30%;
+  height: auto;
+}
+
+#jsonInput .json-tree {
+  border-bottom: 0;
+  border-right: 0;
+}
+
+#output {
+  float: right;
+  width: 70%;
+  word-break: break-all;
+  padding: 0;
+}
+
+#output .reply,
+#output .action {
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+}
+
+#output .reply {
+  height: 250px;
+}
+
+#output .action {
+  background-color: rgb(75, 75, 75);
+  color: white;
+  margin: 0;
+  padding: 5px;
+}
+
+body,
+html {
+  margin: 0;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  font-size: 12px;
+  background-color: rgb(102, 102, 102);
+}
+
+#address {
+  background-color: rgb(75, 75, 75);
+  color: indianred;
+  padding: 10px;
+  width: 25%;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-bottom: 0;
+  border-top: 0;
+}
+
+#header {
+  border-left: 0;
+  border-right: 1px solid white;
+  border-bottom: 0;
+  border-top: 0;
+  padding: 10px;
+  background-color: rgb(102, 102, 102);
+  font-weight: bold;
+  font-size: 18px;
+  width: 110px;
+  margin-top: -10px;
+  color: white;
+}
