@@ -45,6 +45,7 @@
 		<input type="button" id="connectBtn" value="CONNECT" onclick="connect()" />
 		<input type="button" id="disconnectBtn" value="DISCONNECT" onclick="closeSocket()" disabled="true" />
 		<input type="text" id="address" value="ws://localhost:80" />
+		<input type="button" id="clearBtn" value="Clear Output" onclick="clearOutput()" disabled="true" />
 		<input type="button" id="sendBtn" value="SEND" onclick="send()" disabled="true" />
 	</div>
 	<div id="container">
@@ -60,7 +61,7 @@
 	var disconnectBtn = document.getElementById("disconnectBtn");
 	var sendBtn = document.getElementById("sendBtn");
 	var address = document.getElementById("address");
-	var inputFields = document.getElementById("inputFields");
+	var clearBtn = document.getElementById("clearBtn");
 
 	/**
 	 * 
@@ -105,7 +106,6 @@
 	 * 
 	 * */
 	function send() {
-		var text = document.getElementById("jsonInput").value;
 		var json = inputEditor.get();
 		webSocket.send(JSON.stringify(json));
 	}
@@ -145,10 +145,17 @@
 				if (!node.path) {
 					return false;
 				}
-			}
+			};
 			var editor = new JSONEditor(newOutput, options, data);
 			editor.expandAll();
 		}
+
+		clearBtn.disabled = false;
+	}
+
+	function clearOutput() {
+		output.innerHTML = '';
+		clearBtn.disabled = true;
 	}
 
 	var container = document.getElementById('jsonInput');
