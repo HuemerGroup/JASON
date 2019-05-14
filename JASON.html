@@ -24,7 +24,7 @@
 	Copyright (c) 2019 HuemerGroup
 	
 	@author  Oskar Kruschitz	https://github.com/hiiamok
-	@version 1.0.1
+	@version 1.0.2
 	@date    2019-05-14
 
 -->
@@ -45,8 +45,8 @@
 		<input type="button" id="connectBtn" value="CONNECT" onclick="connect()" />
 		<input type="button" id="disconnectBtn" value="DISCONNECT" onclick="closeSocket()" disabled="true" />
 		<input type="text" id="address" value="ws://localhost:80" />
-		<input type="button" id="clearBtn" value="Clear Output" onclick="clearOutput()" disabled="true" />
-		<input type="button" id="sendBtn" value="SEND" onclick="send()" disabled="true" />
+		<input type="button" id="sendBtn" value="SEND" onclick="send()" disabled="true" style="width:10%;" />
+		<input type="button" id="clearBtn" value="CLEAR" onclick="clearOutput()" disabled="true" />
 	</div>
 	<div id="container">
 		<div id="jsonInput"></div>
